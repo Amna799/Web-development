@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+
+        }
+    </style>
+</head>
+
+<body>
+    <form action="submit_form" method="post" autocomplete="on" novalidate>
+        <fieldset>
+
+            <legend>Registration Form</legend>
+
+            <table style="width: 80%;">
+
+                <tr>
+                    <td><label for="Username">Username:</label></td>
+                    <td colspan="2"><input type="text" name="Username" id="Username"></td>
+                </tr>
+
+                <tr>
+                    <td><label for=" Password ">Password:</label></td>
+                    <td colspan="2"><input type=" password " name=" Password " id="Password"></td>
+
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>Gender:</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="Gender" value="Male" id="Male">
+                        <label for="Male">Male </label>
+                       
+                    </td>
+                    <td>
+                       <input type="radio" name="Gender" value="Female" id="Female">
+                        <label for="Female">Female</label>
+                       
+                    </td>
+
+
+                </tr>
+
+                <tr>
+                    <td> <label>Hobbies:</label></td>
+                    <td >
+                        <input type="checkbox" name="Hobbies" value="Sport" id="Sport">
+                        <label for="Sport">Sport</label>
+                    </td>
+
+                    <td>
+                        <input type="checkbox" name="Hobbies" value="Reading" id="Reading">
+                        <label for="Reading">Reading</label>
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td "><label for="car">Choose car:</label></td>
+                    <td colspan="2">
+
+                        <select id="car" name="Car" size="2">
+                            <option value="Volvo">Volvo</option>
+                            <option value="Saab">Saab</option>
+                            <option value="Toyota">Toyota</option>
+                            <option value="Honda">Honda</option>
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td ><button type="submit">Register</button></td>
+                    <td><button type="reset">Reset</button></td>
+                </tr>
+
+        </fieldset>
+    </form>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic Form Structure</title>
+</head>
+<body>
+    <form action="submit form" method="post" target="_blank" novalidate autocomplete="on">
+    <legend>Add your Information :- </legend>  
+   <fieldset>
+    <label for="Username">Username</label>
+    <input type="text" id="Username"name="Username"required>
+
+    <label for="Password">Password</label>
+    <input type="password" id="Password" name="password"><br><br>
+
+    <label for="Gender">Gender</label>
+    <input type="radio" id="Gender" value="Male" name="gender">Male
+    <input type="radio" id="Gender" value="Female" name="gender">Femail<br><br>
+
+    <label for="Hobbies">Hobbies</label>
+    <input type="checkbox" id="Hobbies" value="Reading">Reading
+    <input type="checkbox" id="Hobbies" value="Sports">Sports<br><br>
+    <label for ="car">Choose Car</label>
+
+    <select id="car" name="car" size="2" multiple>
+    <option value="volvo">volvo</option>
+     <option value="saab">Saab</option>
+     <option value="fiat">Fiat</option>
+     <option value="audi">Audi</option>
+      <option value="saab">Saab</option>
+     <option value="fiat">Fiat</option>
+     <option value="audi">Audi</option>
+        
+    </select>
+    <br><br>
+    <button type="button" onclick="alert('Hello World!')"> Click Me</button>
+
+
+    <br><br>
+   <input type="submit" value="Register">
+   <input type="Reset" value="Reset"
+   </fieldset>
+
+
+
+    </form>
+</body>
+</html>

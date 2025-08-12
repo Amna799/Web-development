@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Grid Practice 03</title>
+  <style>
+    .container {
+      color: white;
+      margin: 50px auto;
+      width: 700px;
+
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 15px;
+      grid-template-rows:
+        [header-start] 120px [header-end]
+        [menu-start] 60px [menu-end]
+        [sidebar-start] 100px [sidebar-end]
+        [content-start] 400px [content-end]
+        [footer-start] 50px [footer-end];
+    }
+
+    .Header {
+      background-color: gray;
+      grid-row: header-start / header-end;
+      grid-column: 1 / -1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .Menu {
+      background-color: yellowgreen;
+      grid-row: menu-start / menu-end;
+      grid-column: 1 / -1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .Box1 {
+      background-color: hotpink;
+      grid-row: sidebar-start / sidebar-end;
+      grid-column: 1 / 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .Box2 {
+      background-color: mediumpurple;
+      grid-row: sidebar-start / sidebar-end;
+      grid-column: 2 / 3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .Sidebar {
+      background-color: rgb(58, 194, 149);
+      grid-row: sidebar-start / sidebar-end;
+      grid-column: 3 / 4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .Content {
+      background-color: olivedrab;
+      grid-row: content-start / content-end;
+      grid-column: 1 / 3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .Footer {
+      background-color: goldenrod;
+      grid-column: 1 / -1;
+      grid-row: footer-start / footer-end;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="Header">Header</div>
+    <div class="Menu">Menu</div>
+    <div class="Box1">Box1</div>
+    <div class="Box2">Box2</div>
+    <div class="Sidebar">Sidebar</div>
+    <div class="Content">Content</div>
+    <div class="Footer">Footer</div>
+  </div>
+</body>
+</html>

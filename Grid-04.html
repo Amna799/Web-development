@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min/Max in Grid</title>
+
+    <style>
+        .container {
+            width: 700px;
+            padding: 0; 
+            margin: 50px 0 0 50px;
+            color: white;
+
+            display: grid;
+            grid-template-columns: max-content 150px min-content; /* 3 columns */
+            grid-template-rows: 150px 150px;         /* 2 rows */
+            grid-row-gap: 15px;
+            grid-column-gap: 15px;
+        }
+
+        .items {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 6px;
+        }
+
+        .items1 { background-color: gray; }
+        .items2 { background-color: yellowgreen; }
+        .items3 { background-color: orangered; }
+        .items4 { background-color: slateblue; }
+        .items5 { background-color: royalblue; }
+        .items6 { background-color: goldenrod; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items items1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero debitis officia a expedita</div>
+        <div class="items items2">2</div>
+        <div class="items items3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="items items4">4</div>
+        <div class="items items5">5</div>
+        <div class="items items6">6</div>
+    </div>
+</body>
+</html>
